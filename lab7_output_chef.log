@@ -1,0 +1,38 @@
+[2016-09-14T21:27:58+01:00] INFO: Started chef-zero at chefzero://localhost:8889 with repository at /root
+  One version per cookbook
+
+[2016-09-14T21:27:58+01:00] INFO: Forking chef instance to converge...
+[2016-09-14T21:27:58+01:00] INFO: *** Chef 12.13.37 ***
+[2016-09-14T21:27:58+01:00] INFO: Platform: x86_64-linux
+[2016-09-14T21:27:58+01:00] INFO: Chef-client pid: 13292
+[2016-09-14T21:28:04+01:00] INFO: Setting the run_list to ["recipe[jboss::default]"] from CLI options
+[2016-09-14T21:28:04+01:00] INFO: Run List is [recipe[jboss::default]]
+[2016-09-14T21:28:04+01:00] INFO: Run List expands to [jboss::default]
+[2016-09-14T21:28:04+01:00] INFO: Starting Chef Run for chef2
+[2016-09-14T21:28:04+01:00] INFO: Running start handlers
+[2016-09-14T21:28:04+01:00] INFO: Start handlers complete.
+[2016-09-14T21:28:04+01:00] INFO: HTTP Request Returned 404 Not Found: Object not found: 
+[2016-09-14T21:28:04+01:00] INFO: Loading cookbooks [jboss@0.1.0]
+[2016-09-14T21:28:04+01:00] INFO: Storing updated cookbooks/jboss/lab7_output_chef.log in the cache.
+[2016-09-14T21:28:04+01:00] INFO: Processing user[jboss] action create (jboss::default line 9)
+[2016-09-14T21:28:04+01:00] INFO: Processing remote_file[/opt/jboss7.zip] action create_if_missing (jboss::default line 17)
+[2016-09-14T21:28:04+01:00] INFO: Processing remote_file[/opt/testweb.zip] action create_if_missing (jboss::default line 23)
+[2016-09-14T21:28:04+01:00] INFO: Processing yum_package[unzip] action install (jboss::default line 30)
+[2016-09-14T21:28:07+01:00] INFO: Processing execute[unzip_jboss] action run (jboss::default line 34)
+[2016-09-14T21:28:09+01:00] INFO: execute[unzip_jboss] ran successfully
+[2016-09-14T21:28:09+01:00] INFO: Processing execute[change_owner_to_jboss] action run (jboss::default line 40)
+[2016-09-14T21:28:09+01:00] INFO: execute[change_owner_to_jboss] ran successfully
+[2016-09-14T21:28:09+01:00] INFO: Processing execute[unzip_app] action run (jboss::default line 44)
+[2016-09-14T21:28:09+01:00] INFO: execute[unzip_app] ran successfully
+[2016-09-14T21:28:09+01:00] INFO: Processing template[/etc/init.d/jboss] action create (jboss::default line 51)
+[2016-09-14T21:28:09+01:00] INFO: template[/etc/init.d/jboss] created file /etc/init.d/jboss
+[2016-09-14T21:28:09+01:00] INFO: template[/etc/init.d/jboss] updated file contents /etc/init.d/jboss
+[2016-09-14T21:28:09+01:00] INFO: template[/etc/init.d/jboss] owner changed to 497
+[2016-09-14T21:28:09+01:00] INFO: template[/etc/init.d/jboss] group changed to 497
+[2016-09-14T21:28:09+01:00] INFO: template[/etc/init.d/jboss] mode changed to 755
+[2016-09-14T21:28:09+01:00] INFO: Processing service[jboss] action enable (jboss::default line 63)
+[2016-09-14T21:28:09+01:00] INFO: Processing service[jboss] action start (jboss::default line 63)
+[2016-09-14T21:28:09+01:00] INFO: service[jboss] started
+[2016-09-14T21:28:10+01:00] INFO: Chef Run complete in 5.215541429 seconds
+[2016-09-14T21:28:10+01:00] INFO: Running report handlers
+[2016-09-14T21:28:10+01:00] INFO: Report handlers complete

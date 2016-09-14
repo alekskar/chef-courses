@@ -1,0 +1,15 @@
+[2016-09-14T21:27:58+01:00] INFO: Started chef-zero at chefzero://localhost:8889 with repository at /root
+  One version per cookbook
+
+[2016-09-14T21:27:58+01:00] INFO: Forking chef instance to converge...
+[2016-09-14T21:27:58+01:00] INFO: *** Chef 12.13.37 ***
+[2016-09-14T21:27:58+01:00] INFO: Platform: x86_64-linux
+[2016-09-14T21:27:58+01:00] INFO: Chef-client pid: 13292
+[2016-09-14T21:28:04+01:00] INFO: Setting the run_list to ["recipe[jboss::default]"] from CLI options
+[2016-09-14T21:28:04+01:00] INFO: Run List is [recipe[jboss::default]]
+[2016-09-14T21:28:04+01:00] INFO: Run List expands to [jboss::default]
+[2016-09-14T21:28:04+01:00] INFO: Starting Chef Run for chef2
+[2016-09-14T21:28:04+01:00] INFO: Running start handlers
+[2016-09-14T21:28:04+01:00] INFO: Start handlers complete.
+[2016-09-14T21:28:04+01:00] INFO: HTTP Request Returned 404 Not Found: Object not found: 
+[2016-09-14T21:28:04+01:00] INFO: Loading cookbooks [jboss@0.1.0]
