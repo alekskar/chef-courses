@@ -1,0 +1,9 @@
+default['jboss']['user'] = 'jboss'
+default['jboss']['dist_name'] = "/opt/jboss7.zip"
+default['jboss']['app_path'] = "/opt/testweb.zip"
+default['jboss']['url'] = "http://download.jboss.org/jbossas/7.1/jboss-as-7.1.1.Final/jboss-as-7.1.1.Final.zip"
+default['jboss']['app_url'] = "http://www.cumulogic.com/download/Apps/testweb.zip"
+default['jboss']['install_folder'] = '/opt'
+default['jboss']['jboss_home'] = '/opt/jboss-as-7.1.1.Final'
+default['jboss']['deploy_folder'] = "#{node['jboss']['jboss_home']}/standalone/deployments"
+default['jboss']['jboss_ip'] = '0.0.0.0'
