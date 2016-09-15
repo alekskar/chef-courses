@@ -1,0 +1,45 @@
+192.168.100.120 -----> Existing Chef installation detected
+192.168.100.120 Starting the first Chef Client run...
+192.168.100.120 Starting Chef Client, version 12.14.60[0m
+192.168.100.120 resolving cookbooks for run list: ["jboss"][0m
+192.168.100.120 Synchronizing Cookbooks:[0m
+192.168.100.120   - jboss (0.1.0)[0m
+192.168.100.120   - java (1.42.0)[0m
+192.168.100.120   - apt (4.0.1)[0m
+192.168.100.120   - compat_resource (12.10.7)[0m
+192.168.100.120   - windows (2.0.2)[0m
+192.168.100.120   - homebrew (2.1.2)[0m
+192.168.100.120   - build-essential (6.0.4)[0m
+192.168.100.120   - seven_zip (2.0.2)[0m
+192.168.100.120   - mingw (1.2.4)[0m
+192.168.100.120 Installing Cookbook Gems:[0m
+192.168.100.120 Compiling Cookbooks...[0m
+192.168.100.120 [2016-09-15T17:01:51+01:00] WARN: Chef::Provider::AptRepository already exists!  Cannot create deprecation class for LWRP provider apt_repository from cookbook apt
+192.168.100.120 [2016-09-15T17:01:51+01:00] WARN: AptRepository already exists!  Deprecation class overwrites Custom resource apt_repository from cookbook apt
+192.168.100.120 Converging 11 resources[0m
+192.168.100.120 Recipe: jboss::default[0m
+192.168.100.120   * linux_user[jboss] action create (up to date)
+192.168.100.120   * remote_file[/opt/jboss7.zip] action create_if_missing (up to date)
+192.168.100.120   * remote_file[/opt/hudson.zip] action create_if_missing (up to date)
+192.168.100.120   * yum_package[unzip] action install (up to date)
+192.168.100.120   * execute[unzip_jboss] action run (skipped due to not_if)
+192.168.100.120   * execute[change_owner_to_jboss] action run
+192.168.100.120     [32m- execute chown -R jboss:jboss /opt/jboss-as-7.1.1.Final[0m
+192.168.100.120 [0m  * execute[unzip_app] action run (skipped due to not_if)
+192.168.100.120   * template[/etc/init.d/jboss] action create (up to date)
+192.168.100.120   * template[/etc/init.d/jboss] action create (up to date)
+192.168.100.120   * template[/opt/jboss-as-7.1.1.Final/standalone/deployments/hudson/hudson.xml] action create (up to date)
+192.168.100.120   * service[jboss] action enable (up to date)
+192.168.100.120   * service[jboss] action start
+192.168.100.120     [32m- start service service[jboss][0m
+192.168.100.120 [0m[0m
+192.168.100.120 Running handlers:[0m
+192.168.100.120 Running handlers complete
+192.168.100.120 [0m[0m
+192.168.100.120 Deprecated features used![0m
+192.168.100.120   Cloning resource attributes for template[/etc/init.d/jboss] from prior resource (CHEF-3694)
+192.168.100.120 [0mPrevious template[/etc/init.d/jboss]: /var/chef/cache/cookbooks/jboss/recipes/default.rb:51:in `from_file'
+192.168.100.120 [0mCurrent  template[/etc/init.d/jboss]: /var/chef/cache/cookbooks/jboss/recipes/default.rb:61:in `from_file' at 1 location:[0m
+192.168.100.120     - /var/chef/cache/cookbooks/jboss/recipes/default.rb:61:in `from_file'[0m
+192.168.100.120 [0m
+192.168.100.120 Chef Client finished, 2/12 resources updated in 05 seconds[0m
