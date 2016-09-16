@@ -1,35 +1,35 @@
 action :install_server do
-  package "httpd" do
+  package "nginx" do
     action :install
   end
 end
 
 action :start do
-  service "httpd" do
+  service "nginx" do
     action :start
   end
 end
 
 action :stop do
-  service "httpd" do
+  service "nginx" do
     action :stop
   end
 end
 
 action :restart do
-  service "httpd" do
+  service "nginx" do
     action :restart
   end
 end
 
 action :reload do
-  service "httpd" do
+  service "nginx" do
     action :reload
   end
 end
 
 action :setup_web_server do
-  template "/var/www/html/index.html" do
+  template "/usr/share/nginx/html/index.html" do
     source "index.erb"
   end
 end
