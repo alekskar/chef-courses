@@ -1,4 +1,5 @@
 require 'serverspec'
+require 'net/http'
 
 set :backend, :exec
 
@@ -19,6 +20,17 @@ describe "services is running" do
   it "is nginx listening port" do
     expect(port(80)).to be_listening
     expect(port(22)).to be_listening
+  
+  end
+
+  it "is jenkins listening port" do
+    expect(port(8080)).to be_listening
+  end
+  
+  it 'responce' do
+     url = URI("http://localhost")
+     r = Net::HTTP.get_response(url)
+     expect(r.is_a?(Net::HTTPOK))
   end
 
 end
