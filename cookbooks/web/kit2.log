@@ -1,0 +1,157 @@
+-----> Starting Kitchen (v1.13.0)
+-----> Creating <default-sbeliakou-centos-67-x86-64>...
+       Bringing machine 'default' up with 'virtualbox' provider...
+       ==> default: Importing base box 'sbeliakou/centos-6.7-x86_64'...
+       [KProgress: 10%[KProgress: 20%[KProgress: 30%[KProgress: 40%[KProgress: 50%[KProgress: 60%[KProgress: 70%[KProgress: 80%[KProgress: 90%[K==> default: Matching MAC address for NAT networking...
+       ==> default: Setting the name of the VM: kitchen-web-default-sbeliakou-centos-67-x86-64_default_1474307520669_68771
+       ==> default: Fixed port collision for 22 => 2222. Now on port 2202.
+       ==> default: Clearing any previously set network interfaces...
+       ==> default: Preparing network interfaces based on configuration...
+           default: Adapter 1: nat
+       ==> default: Forwarding ports...
+           default: 22 (guest) => 2202 (host) (adapter 1)
+       ==> default: Booting VM...
+       ==> default: Waiting for machine to boot. This may take a few minutes...
+           default: SSH address: 127.0.0.1:2202
+           default: SSH username: vagrant
+           default: SSH auth method: private key
+           default: 
+           default: Vagrant insecure key detected. Vagrant will automatically replace
+           default: this with a newly generated keypair for better security.
+           default: 
+           default: Inserting generated public key within guest...
+           default: Removing insecure key from the guest if it's present...
+           default: Key inserted! Disconnecting and reconnecting using new SSH key...
+       ==> default: Machine booted and ready!
+       ==> default: Checking for guest additions in VM...
+       ==> default: Setting hostname...
+       ==> default: Machine not provisioned because `--no-provision` is specified.
+       [SSH] Established
+       Vagrant instance <default-sbeliakou-centos-67-x86-64> created.
+       Finished creating <default-sbeliakou-centos-67-x86-64> (0m53.22s).
+-----> Converging <default-sbeliakou-centos-67-x86-64>...
+       Preparing files for transfer
+       Preparing dna.json
+       Preparing current project directory as a cookbook
+       Removing non-cookbook files before transfer
+       Preparing solo.rb
+-----> Installing Chef Omnibus (install only if missing)
+       Downloading https://omnitruck.chef.io/install.sh to file /tmp/install.sh
+       Trying wget...
+       Download complete.
+       el 6 x86_64
+       Getting information for chef stable  for el...
+       downloading https://omnitruck.chef.io/stable/chef/metadata?v=&p=el&pv=6&m=x86_64
+         to file /tmp/install.sh.2491/metadata.txt
+       trying wget...
+       sha1	9e4078002ffb604f29ac0fdc92c5a8a13e4e3491
+       sha256	78722816dd421fc8bae538fe559c37a59d5fd09c833cd4c97e577c59ecd5bc0f
+       url	https://packages.chef.io/stable/el/6/chef-12.14.60-1.el6.x86_64.rpm
+       version	12.14.60
+       downloaded metadata file looks valid...
+       downloading https://packages.chef.io/stable/el/6/chef-12.14.60-1.el6.x86_64.rpm
+         to file /tmp/install.sh.2491/chef-12.14.60-1.el6.x86_64.rpm
+       trying wget...
+       Comparing checksum with sha256sum...
+       
+       WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+       
+       You are installing an omnibus package without a version pin.  If you are installing
+       on production servers via an automated process this is DANGEROUS and you will
+       be upgraded without warning on new releases, even to new major releases.
+       Letting the version float is only appropriate in desktop, test, development or
+       CI/CD environments.
+       
+       WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+       
+       Installing chef 
+       installing with rpm...
+       warning: /tmp/install.sh.2491/chef-12.14.60-1.el6.x86_64.rpm: Header V4 DSA/SHA1 Signature, key ID 83ef826a: NOKEY
+       Preparing...                                                            (100%)#                                           (100%)##                                          (100%)###                                         (100%)####                                        (100%)#####                                       (100%)######                                      (100%)#######                                     (100%)########                                    (100%)#########                                   (100%)##########                                  (100%)###########                                 (100%)############                                (100%)#############                               (100%)##############                              (100%)###############                             (100%)################                            (100%)#################                           (100%)##################                          (100%)###################                         (100%)####################                        (100%)#####################                       (100%)######################                      (100%)#######################                     (100%)########################                    (100%)#########################                   (100%)##########################                  (100%)###########################                 (100%)############################                (100%)#############################               (100%)##############################              (100%)###############################             (100%)################################            (100%)#################################           (100%)##################################          (100%)###################################         (100%)####################################        (100%)#####################################       (100%)######################################      (100%)#######################################     (100%)########################################    (100%)#########################################   (100%)##########################################  (100%)########################################### (100%)########################################### [100%]
+          1:chef                                                               (  1%)#                                           (  3%)##                                          (  6%)###                                         (  8%)####                                        ( 10%)#####                                       ( 13%)######                                      ( 15%)#######                                     ( 17%)########                                    ( 19%)#########                                   ( 22%)##########                                  ( 24%)###########                                 ( 26%)############                                ( 28%)#############                               ( 31%)##############                              ( 33%)###############                             ( 35%)################                            ( 38%)#################                           ( 40%)##################                          ( 42%)###################                         ( 44%)####################                        ( 47%)#####################                       ( 49%)######################                      ( 51%)#######################                     ( 53%)########################                    ( 56%)#########################                   ( 58%)##########################                  ( 60%)###########################                 ( 63%)############################                ( 65%)#############################               ( 67%)##############################              ( 69%)###############################             ( 72%)################################            ( 74%)#################################           ( 76%)##################################          ( 78%)###################################         ( 81%)####################################        ( 83%)#####################################       ( 85%)######################################      ( 88%)#######################################     ( 90%)########################################    ( 92%)#########################################   ( 94%)##########################################  ( 97%)########################################### ( 99%)########################################### [100%]
+       Thank you for installing Chef!
+       Transferring files to <default-sbeliakou-centos-67-x86-64>
+       Starting Chef Client, version 12.14.60
+       Creating a new client identity for default-sbeliakou-centos-67-x86-64 using the validator key.
+       resolving cookbooks for run list: ["web::default"]
+       Synchronizing Cookbooks:
+         - web (0.1.0)
+       Installing Cookbook Gems:
+       Compiling Cookbooks...
+       Converging 3 resources
+       Recipe: web::default
+         * yum_package[nginx] action install
+           - install version 1.10.1-1.el6 of package nginx
+         * template[/etc/nginx/conf.d/default.conf] action create
+           - update content in file /etc/nginx/conf.d/default.conf from 2c3f71 to c6b29c
+           --- /etc/nginx/conf.d/default.conf	2016-07-02 20:41:18.000000000 +0100
+           +++ /etc/nginx/conf.d/.chef-default.conf20160919-2588-125u8hf	2016-09-19 18:53:34.793016001 +0100
+           @@ -1,27 +1,39 @@
+           -#
+           -# The default server
+           -#
+           -
+            server {
+           -    listen       80 default_server;
+           -    listen       [::]:80 default_server;
+           -    server_name  _;
+           -    root         /usr/share/nginx/html;
+           +    listen       80;
+           +    server_name  localhost;
+            
+           -    # Load configuration files for the default server block.
+           +
+           +
+         include /etc/nginx/default.d/*.conf;
+            
+         location / {
+           +        root   /usr/share/nginx/html;
+           +        index  index.html index.htm;
+         }
+           +    location /mnt-lab {
+           +    proxy_pass http://127.0.0.1:8091/mnt-lab/mnt-lab;
+           +    proxy_read_timeout  90;
+            
+           -    error_page 404 /404.html;
+           -        location = /40x.html {
+           -    }
+            
+           -    error_page 500 502 503 504 /50x.html;
+           -        location = /50x.html {
+           +    proxy_set_header Host $host;
+           +    proxy_set_header X-Real-IP $remote_addr;
+           +    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+           +    proxy_set_header        X-Forwarded-Proto $scheme;
+         }
+           +    location /jenkins {
+           +        proxy_set_header	Host $host:$server_port;
+           +	proxy_set_header	X-Real-Ip $remote_addr;
+           +	proxy_set_header	X-Forwarded-For $proxy_add_x_forwarded_for;
+           +	proxy_set_header        X-Forwarded-Proto $scheme;
+           +    proxy_pass http://127.0.0.1:8080;
+           +    proxy_redirect http://localhost/jenkins $scheme:/localhost:8080/jenkins; 
+           +    proxy_read_timeout	90; 
+            
+           +   }
+           +    error_page  404              /404.html;
+           +    location = /404.html {
+           +        root   /usr/share/nginx/html;
+           +    }
+            }
+            
+         * service[nginx] action enable
+           - enable service service[nginx]
+         * service[nginx] action start
+           - start service service[nginx]
+       
+       Running handlers:
+       Running handlers complete
+       Chef Client finished, 4/4 resources updated in 33 seconds
+       Finished converging <default-sbeliakou-centos-67-x86-64> (0m59.84s).
+-----> Setting up <default-sbeliakou-centos-67-x86-64>...
+       Finished setting up <default-sbeliakou-centos-67-x86-64> (0m0.00s).
+-----> Verifying <default-sbeliakou-centos-67-x86-64>...
+       Preparing files for transfer
+       Transferring files to <default-sbeliakou-centos-67-x86-64>
+       Finished verifying <default-sbeliakou-centos-67-x86-64> (0m0.00s).
+-----> Kitchen is finished. (1m53.60s)

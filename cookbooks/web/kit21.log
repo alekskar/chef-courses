@@ -1,0 +1,43 @@
+-----> Starting Kitchen (v1.13.0)
+-----> Verifying <default-sbeliakou-centos-67-x86-64>...
+       Preparing files for transfer
+-----> Installing Busser (busser)
+       Fetching: thor-0.19.0.gemFetching: thor-0.19.0.gem (  3%)Fetching: thor-0.19.0.gem (  6%)Fetching: thor-0.19.0.gem (  9%)Fetching: thor-0.19.0.gem ( 12%)Fetching: thor-0.19.0.gem ( 15%)Fetching: thor-0.19.0.gem ( 18%)Fetching: thor-0.19.0.gem ( 21%)Fetching: thor-0.19.0.gem ( 24%)Fetching: thor-0.19.0.gem ( 27%)Fetching: thor-0.19.0.gem ( 30%)Fetching: thor-0.19.0.gem ( 33%)Fetching: thor-0.19.0.gem ( 35%)Fetching: thor-0.19.0.gem ( 53%)Fetching: thor-0.19.0.gem ( 71%)Fetching: thor-0.19.0.gem ( 89%)Fetching: thor-0.19.0.gem (100%)Fetching: thor-0.19.0.gem (100%)
+       Successfully installed thor-0.19.0
+       Fetching: busser-0.7.1.gemFetching: busser-0.7.1.gem ( 64%)Fetching: busser-0.7.1.gem (100%)Fetching: busser-0.7.1.gem (100%)
+       Successfully installed busser-0.7.1
+       2 gems installed
+       Installing Busser plugins: busser-serverspec
+       Plugin serverspec installed (version 0.5.10)
+-----> Running postinstall for serverspec plugin
+       Suite path directory /tmp/verifier/suites does not exist, skipping.
+       Transferring files to <default-sbeliakou-centos-67-x86-64>
+-----> Running serverspec test suite
+-----> Installing Serverspec..
+       Fetching: diff-lcs-1.2.5.gemFetching: diff-lcs-1.2.5.gem (  5%)Fetching: diff-lcs-1.2.5.gem ( 10%)Fetching: diff-lcs-1.2.5.gem ( 16%)Fetching: diff-lcs-1.2.5.gem ( 22%)Fetching: diff-lcs-1.2.5.gem ( 27%)Fetching: diff-lcs-1.2.5.gem ( 32%)Fetching: diff-lcs-1.2.5.gem ( 38%)Fetching: diff-lcs-1.2.5.gem ( 44%)Fetching: diff-lcs-1.2.5.gem ( 49%)Fetching: diff-lcs-1.2.5.gem ( 55%)Fetching: diff-lcs-1.2.5.gem ( 60%)Fetching: diff-lcs-1.2.5.gem ( 66%)Fetching: diff-lcs-1.2.5.gem ( 99%)Fetching: diff-lcs-1.2.5.gem (100%)Fetching: diff-lcs-1.2.5.gem (100%)
+       Fetching: rspec-expectations-3.5.0.gemFetching: rspec-expectations-3.5.0.gem ( 21%)Fetching: rspec-expectations-3.5.0.gem ( 42%)Fetching: rspec-expectations-3.5.0.gem ( 63%)Fetching: rspec-expectations-3.5.0.gem ( 84%)Fetching: rspec-expectations-3.5.0.gem (100%)Fetching: rspec-expectations-3.5.0.gem (100%)
+       Fetching: rspec-mocks-3.5.0.gemFetching: rspec-mocks-3.5.0.gem ( 21%)Fetching: rspec-mocks-3.5.0.gem ( 42%)Fetching: rspec-mocks-3.5.0.gem ( 64%)Fetching: rspec-mocks-3.5.0.gem ( 85%)Fetching: rspec-mocks-3.5.0.gem (100%)Fetching: rspec-mocks-3.5.0.gem (100%)
+       Fetching: rspec-3.5.0.gemFetching: rspec-3.5.0.gem (100%)Fetching: rspec-3.5.0.gem (100%)
+       Fetching: rspec-its-1.2.0.gemFetching: rspec-its-1.2.0.gem (100%)Fetching: rspec-its-1.2.0.gem (100%)
+       Fetching: multi_json-1.12.1.gemFetching: multi_json-1.12.1.gem ( 61%)Fetching: multi_json-1.12.1.gem (100%)Fetching: multi_json-1.12.1.gem (100%)
+       Fetching: net-ssh-3.2.0.gemFetching: net-ssh-3.2.0.gem (  9%)Fetching: net-ssh-3.2.0.gem ( 18%)Fetching: net-ssh-3.2.0.gem ( 27%)Fetching: net-ssh-3.2.0.gem ( 35%)Fetching: net-ssh-3.2.0.gem ( 44%)Fetching: net-ssh-3.2.0.gem ( 53%)Fetching: net-ssh-3.2.0.gem ( 62%)Fetching: net-ssh-3.2.0.gem ( 71%)Fetching: net-ssh-3.2.0.gem ( 80%)Fetching: net-ssh-3.2.0.gem ( 89%)Fetching: net-ssh-3.2.0.gem ( 97%)Fetching: net-ssh-3.2.0.gem (100%)Fetching: net-ssh-3.2.0.gem (100%)
+       Fetching: net-scp-1.2.1.gemFetching: net-scp-1.2.1.gem ( 48%)Fetching: net-scp-1.2.1.gem ( 98%)Fetching: net-scp-1.2.1.gem (100%)Fetching: net-scp-1.2.1.gem (100%)
+       Fetching: net-telnet-0.1.1.gemFetching: net-telnet-0.1.1.gem ( 93%)Fetching: net-telnet-0.1.1.gem (100%)Fetching: net-telnet-0.1.1.gem (100%)
+       Fetching: sfl-2.2.gemFetching: sfl-2.2.gem (100%)Fetching: sfl-2.2.gem (100%)
+       Fetching: specinfra-2.62.0.gemFetching: specinfra-2.62.0.gem ( 20%)Fetching: specinfra-2.62.0.gem ( 40%)Fetching: specinfra-2.62.0.gem ( 60%)Fetching: specinfra-2.62.0.gem ( 80%)Fetching: specinfra-2.62.0.gem (100%)Fetching: specinfra-2.62.0.gem (100%)
+       Fetching: serverspec-2.36.1.gemFetching: serverspec-2.36.1.gem ( 41%)Fetching: serverspec-2.36.1.gem ( 83%)Fetching: serverspec-2.36.1.gem (100%)Fetching: serverspec-2.36.1.gem (100%)
+-----> serverspec installed (version 2.36.1)
+       /opt/chef/embedded/bin/ruby -I/tmp/verifier/suites/serverspec -I/tmp/verifier/gems/gems/rspec-support-3.5.0/lib:/tmp/verifier/gems/gems/rspec-core-3.5.3/lib /opt/chef/embedded/bin/rspec --pattern /tmp/verifier/suites/serverspec/\*\*/\*_spec.rb --color --format documentation --default-path /tmp/verifier/suites/serverspec
+       
+       nginx is installed
+       [32m  nginx[0m
+       
+       services is running
+       [32m  nginx running and enabled services[0m
+       [32m  is nginx listening port[0m
+       
+       Finished in 0.10474 seconds (files took 0.28357 seconds to load)
+       [32m3 examples, 0 failures[0m
+       
+       Finished verifying <default-sbeliakou-centos-67-x86-64> (0m27.55s).
+-----> Kitchen is finished. (0m27.95s)

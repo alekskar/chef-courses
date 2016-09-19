@@ -1,0 +1,5 @@
+default['nginx']['port'] = '80'
+default['jenkins']['port'] = '8080'
+default['jenkins']['prefix'] = 'jenkins'
+default['tomcat']['port'] = '8091'
+default['app']['prefix'] = 'app'

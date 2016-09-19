@@ -1,0 +1,26 @@
+- name: Provision with Ansible
+  hosts: all
+  become: yes
+
+  vars:
+ #   services_info: |
+ #     Jenkins URL - http://localhost:8080/jenkins/
+ #     Jenkins Delivery - http://localhost:8080/jenkins/view/Aliaksandr_Karavai_pipeline/ 
+ #     Application URL - http://localhost:8080/mnt-lab/
+     tomcat_port: 9090
+     jenkins_port: 8081
+     jenkins_prefix: /jenkins
+     nginx_port: 8080
+    
+        
+
+  pre_tasks:
+  - debug: msg="Let's do this"
+
+  roles:
+  - web
+  - jenkins
+  - tomcat
+
+  post_tasks:
+  - debug: var=services_info.split('\n')

@@ -1,0 +1,4 @@
+---
+# handlers file for tomcat\
+- name: tomcat enabled
+  service: name=tomcat state=started enabled=yes

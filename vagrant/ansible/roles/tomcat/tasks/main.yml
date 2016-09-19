@@ -1,0 +1,12 @@
+---
+# tasks file for tomcat
+- debug: msg="Will install Tomcat"
+- name: install tomcat7
+  yum: name={{ item }} state=installed
+  with_items:
+    - tomcat
+    - tomcat-webapps
+- template: src=server.xml dest=/etc/tomcat/
+  notify: tomcat enabled
+- file: path=/var/lib/tomcat/webapps mode=0777
+- user: name=jenkins groups=tomcat

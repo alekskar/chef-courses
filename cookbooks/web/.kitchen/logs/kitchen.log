@@ -1,0 +1,3 @@
+I, [2016-09-19T22:16:59.565305 #16362]  INFO -- Kitchen: -----> Starting Kitchen (v1.13.0)
+I, [2016-09-19T22:16:59.958317 #16362]  INFO -- Kitchen: -----> Destroying <default-sbeliakou-centos-67-x86-64>...
+I, [2016-09-19T22:17:04.075031 #16362]  INFO -- Kitchen: -----> Kitchen is finished. (0m4.51s)

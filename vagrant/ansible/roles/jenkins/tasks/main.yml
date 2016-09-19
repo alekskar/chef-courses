@@ -1,0 +1,25 @@
+---
+# tasks file for jenkins
+- debug: msg="Will install Jenkins"
+- name: jenkins install key
+  rpm_key: state=present key=https://jenkins-ci.org/redhat/jenkins-ci.org.key validate_certs=no
+- name: install jenkins rep
+  get_url: url=http://pkg.jenkins-ci.org/redhat/jenkins.repo dest=/etc/yum.repos.d/jenkins.repo validate_certs=no
+- name: jenkins install
+  yum: name={{ item }} state=latest
+  with_items:
+      - git
+      - jenkins
+- template:
+    src={{ item.filename }}
+    dest={{ item.dest }}
+  with_items:
+    - {filename: "jenkins", dest: "/etc/sysconfig/jenkins"}
+    - {filename: "jenkinsconfig", dest: "/var/lib/jenkins/config.xml"}
+    
+- copy: src=plugins dest=/var/lib/jenkins
+- copy: src=jobs dest=/var/lib/jenkins
+- copy: src=hudson.tasks.Maven.xml dest=/var/lib/jenkins
+- file: path=/var/lib/jenkins owner=jenkins group=jenkins recurse=yes
+- name: Starting Jenkins after copy jobs
+  service: name=jenkins state=started enabled=yes

@@ -1,0 +1,20 @@
+-----> Starting Kitchen (v1.13.0)
+>>>>>> 
+No instances for regex `default-sbeliakou-centos-67-x86-64', try running `kitchen list'
+
+
+Usage:
+  kitchen verify [INSTANCE|REGEXP|all]
+
+Options:
+  -c, [--concurrency=N]                        # Run a verify against all matching instances concurrently. Only N instances will run at the same time if a number is given. 
+  -p, [--parallel], [--no-parallel]            # [Future DEPRECATION, use --concurrency] Run a verify against all matching instances concurrently. 
+  -t, [--test-base-path=TEST_BASE_PATH]        # Set the base path of the tests
+  -l, [--log-level=LOG_LEVEL]                  # Set the log level (debug, info, warn, error, fatal)
+      [--log-overwrite], [--no-log-overwrite]  # Set to false to prevent log overwriting each time Test Kitchen runs
+      [--color], [--no-color]                  # Toggle color output for STDOUT logger
+
+Description:
+  The instance states are in order: destroy, create, converge, setup, verify, destroy. Change one or more instances from the 
+  current state to the verify state. Actions for all intermediate states will be executed. See http://kitchen.ci for further 
+  explanation.

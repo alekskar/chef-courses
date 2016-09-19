@@ -1,0 +1,38 @@
+server {
+    listen       <%= @nginx_port %>;
+    server_name  localhost;
+
+
+
+    include /etc/nginx/default.d/*.conf;
+
+    location / {
+        root   /usr/share/nginx/html;
+        index  index.html index.htm;
+    }
+    location /mnt-lab {
+    proxy_pass http://127.0.0.1:<%= @tomcat_port %>/mnt-lab/mnt-lab;
+    proxy_read_timeout  90;
+
+
+    proxy_set_header Host $host;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header        X-Forwarded-Proto $scheme;
+    }
+    location /<%= @jenkins_prefix %> {
+        proxy_set_header	Host $host:$server_port;
+	proxy_set_header	X-Real-Ip $remote_addr;
+	proxy_set_header	X-Forwarded-For $proxy_add_x_forwarded_for;
+	proxy_set_header        X-Forwarded-Proto $scheme;
+    proxy_pass http://127.0.0.1:<%= @jenkins_port %>;
+    proxy_redirect http://localhost/<%= @jenkins_prefix %> $scheme:/localhost:<%= @jenkins_port %>/<%= @jenkins_prefix %>; 
+    proxy_read_timeout	90; 
+
+   }
+    error_page  404              /404.html;
+    location = /404.html {
+        root   /usr/share/nginx/html;
+    }
+}
+

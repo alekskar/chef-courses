@@ -1,0 +1,32 @@
+I, [2016-09-19T20:41:51.104235 #32298]  INFO -- Kitchen: -----> Starting Kitchen (v1.13.0)
+E, [2016-09-19T20:41:51.104483 #32298] ERROR -- Kitchen: ------Exception-------
+E, [2016-09-19T20:41:51.104510 #32298] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2016-09-19T20:41:51.104530 #32298] ERROR -- Kitchen: Message: Kitchen YAML file /home/Student/chef/new/chef-courses/.kitchen.yml does not exist.
+E, [2016-09-19T20:41:51.104549 #32298] ERROR -- Kitchen: ----------------------
+E, [2016-09-19T20:41:51.104566 #32298] ERROR -- Kitchen: ------Backtrace-------
+E, [2016-09-19T20:41:51.104583 #32298] ERROR -- Kitchen: /home/Student/.rvm/gems/ruby-2.3.0@mtn/gems/test-kitchen-1.13.0/lib/kitchen/loader/yaml.rb:74:in `read'
+E, [2016-09-19T20:41:51.104603 #32298] ERROR -- Kitchen: /home/Student/.rvm/gems/ruby-2.3.0@mtn/gems/test-kitchen-1.13.0/lib/kitchen/config.rb:154:in `data'
+E, [2016-09-19T20:41:51.104621 #32298] ERROR -- Kitchen: /home/Student/.rvm/gems/ruby-2.3.0@mtn/gems/test-kitchen-1.13.0/lib/kitchen/config.rb:133:in `suites'
+E, [2016-09-19T20:41:51.104638 #32298] ERROR -- Kitchen: /home/Student/.rvm/gems/ruby-2.3.0@mtn/gems/test-kitchen-1.13.0/lib/kitchen/config.rb:184:in `filter_instances'
+E, [2016-09-19T20:41:51.104656 #32298] ERROR -- Kitchen: /home/Student/.rvm/gems/ruby-2.3.0@mtn/gems/test-kitchen-1.13.0/lib/kitchen/config.rb:143:in `build_instances'
+E, [2016-09-19T20:41:51.104673 #32298] ERROR -- Kitchen: /home/Student/.rvm/gems/ruby-2.3.0@mtn/gems/test-kitchen-1.13.0/lib/kitchen/config.rb:119:in `instances'
+E, [2016-09-19T20:41:51.104690 #32298] ERROR -- Kitchen: /home/Student/.rvm/gems/ruby-2.3.0@mtn/gems/test-kitchen-1.13.0/lib/kitchen/command.rb:115:in `filtered_instances'
+E, [2016-09-19T20:41:51.104707 #32298] ERROR -- Kitchen: /home/Student/.rvm/gems/ruby-2.3.0@mtn/gems/test-kitchen-1.13.0/lib/kitchen/command.rb:145:in `parse_subcommand'
+E, [2016-09-19T20:41:51.104724 #32298] ERROR -- Kitchen: /home/Student/.rvm/gems/ruby-2.3.0@mtn/gems/test-kitchen-1.13.0/lib/kitchen/command/test.rb:43:in `block in call'
+E, [2016-09-19T20:41:51.104741 #32298] ERROR -- Kitchen: /home/Student/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2016-09-19T20:41:51.104760 #32298] ERROR -- Kitchen: /home/Student/.rvm/gems/ruby-2.3.0@mtn/gems/test-kitchen-1.13.0/lib/kitchen/command/test.rb:41:in `call'
+E, [2016-09-19T20:41:51.104777 #32298] ERROR -- Kitchen: /home/Student/.rvm/gems/ruby-2.3.0@mtn/gems/test-kitchen-1.13.0/lib/kitchen/cli.rb:56:in `perform'
+E, [2016-09-19T20:41:51.104795 #32298] ERROR -- Kitchen: /home/Student/.rvm/gems/ruby-2.3.0@mtn/gems/test-kitchen-1.13.0/lib/kitchen/cli.rb:233:in `test'
+E, [2016-09-19T20:41:51.104812 #32298] ERROR -- Kitchen: /home/Student/.rvm/gems/ruby-2.3.0@mtn/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2016-09-19T20:41:51.104829 #32298] ERROR -- Kitchen: /home/Student/.rvm/gems/ruby-2.3.0@mtn/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2016-09-19T20:41:51.104846 #32298] ERROR -- Kitchen: /home/Student/.rvm/gems/ruby-2.3.0@mtn/gems/test-kitchen-1.13.0/lib/kitchen/cli.rb:334:in `invoke_task'
+E, [2016-09-19T20:41:51.104877 #32298] ERROR -- Kitchen: /home/Student/.rvm/gems/ruby-2.3.0@mtn/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2016-09-19T20:41:51.104895 #32298] ERROR -- Kitchen: /home/Student/.rvm/gems/ruby-2.3.0@mtn/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2016-09-19T20:41:51.104912 #32298] ERROR -- Kitchen: /home/Student/.rvm/gems/ruby-2.3.0@mtn/gems/test-kitchen-1.13.0/bin/kitchen:13:in `block in <top (required)>'
+E, [2016-09-19T20:41:51.104929 #32298] ERROR -- Kitchen: /home/Student/.rvm/gems/ruby-2.3.0@mtn/gems/test-kitchen-1.13.0/lib/kitchen/errors.rb:174:in `with_friendly_errors'
+E, [2016-09-19T20:41:51.104946 #32298] ERROR -- Kitchen: /home/Student/.rvm/gems/ruby-2.3.0@mtn/gems/test-kitchen-1.13.0/bin/kitchen:13:in `<top (required)>'
+E, [2016-09-19T20:41:51.104963 #32298] ERROR -- Kitchen: /home/Student/.rvm/gems/ruby-2.3.0@mtn/bin/kitchen:23:in `load'
+E, [2016-09-19T20:41:51.104980 #32298] ERROR -- Kitchen: /home/Student/.rvm/gems/ruby-2.3.0@mtn/bin/kitchen:23:in `<main>'
+E, [2016-09-19T20:41:51.105008 #32298] ERROR -- Kitchen: /home/Student/.rvm/gems/ruby-2.3.0@mtn/bin/ruby_executable_hooks:15:in `eval'
+E, [2016-09-19T20:41:51.105027 #32298] ERROR -- Kitchen: /home/Student/.rvm/gems/ruby-2.3.0@mtn/bin/ruby_executable_hooks:15:in `<main>'
+E, [2016-09-19T20:41:51.105044 #32298] ERROR -- Kitchen: ----End Backtrace-----

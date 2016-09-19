@@ -1,0 +1,17 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_solo
+  roles_path: '../../../roles'
+  cookbooks_path:
+    - ../../cookbooks
+platforms:
+  - name: sbeliakou/centos-6.7-x86_64
+
+suites:
+  - name: default
+    run_list:
+       - recipe[web] 
+    attributes:

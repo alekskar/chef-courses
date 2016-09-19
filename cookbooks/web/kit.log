@@ -1,0 +1,8 @@
+-----> Starting Kitchen (v1.13.0)
+-----> Setting up <default-sbeliakou-centos-67-x86-64>...
+       Finished setting up <default-sbeliakou-centos-67-x86-64> (0m0.00s).
+-----> Verifying <default-sbeliakou-centos-67-x86-64>...
+       Preparing files for transfer
+       Transferring files to <default-sbeliakou-centos-67-x86-64>
+       Finished verifying <default-sbeliakou-centos-67-x86-64> (0m0.01s).
+-----> Kitchen is finished. (0m0.44s)
